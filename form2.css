@@ -1,0 +1,171 @@
+body{
+    background-image:url('http://127.0.0.1:5000//static/gamebacklogin1.jpeg');
+    height: auto; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.form-container{
+    position: absolute;
+    top: 35%;
+    left: 80%;
+    transform: translate(-50%,-50%);
+    width: 350px;
+    height: 40px;
+}
+
+.form-container h2{
+    display: inline-block;
+    font-family: Eagle Lake;
+    letter-spacing: 2px;
+    margin: 0 0 30px;
+    padding: 10px 0;
+    color: #FFF;
+    text-align: left;
+}
+
+.form-container h2 img{
+    position: relative;
+    top: 25px;
+    left: 0;
+    width: 60px;
+    height: 60px;
+}
+
+.form-container .input-container{
+    position: relative;
+}
+
+.form-container .input-container input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    background: transparent;
+}
+
+.form-container .input-container label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: white;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.form-container .input-container input:focus ~ label,
+.form-container .input-container input:valid ~ label{
+    top: -18px;
+    left: 0px;
+    color: cyan;
+    font-size: 12px;
+}
+
+.form-container input[type="submit"]{
+    height: 30px;
+    width: 120px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: black;
+    background-color: rgb(241, 241, 241);
+    transition: 0.5s;
+}
+
+.form-container input[type="submit"]:hover{
+    background: transparent ;
+    border: white 1px solid;
+    color: white;
+    background-color: rgb(47, 161, 31);
+    transition: 0.5s;
+}
+
+@media(orientation: portrait ) {
+    body {
+        background-image:url('http://127.0.0.1:5000//static/website.png');
+        height: auto; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .form-container{
+        position: absolute;
+        top: 30%;
+        left: 60%;
+        transform: translate(-50%,-50%);
+        width: 350px;
+        height: 40px;
+    }
+    
+    .form-container h2{
+        margin: 0 0 30px;
+        padding: 10px 0;
+        color: #FFF;
+         text-align: left;
+    }
+    
+    .form-container .input-container{
+        position: relative;
+    }
+    
+    .form-container .input-container input{
+        width: 100%;
+        padding: 10px 0;
+        font-size: 16px;
+        color: white;
+        margin-bottom: 30px;
+        border: none;
+        border-bottom: 1px solid white;
+        outline: none;
+        background: transparent;
+    }
+    
+    .form-container .input-container label{
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px 0;
+        font-size: 16px;
+        color: white;
+        pointer-events: none;
+        transition: 0.5s;
+    }
+    
+    .form-container .input-container input:focus ~ label,
+    .form-container .input-container input:valid ~ label{
+        top: -18px;
+        left: 0px;
+        color: cyan;
+        font-size: 12px;
+    }
+    
+    .form-container input[type="submit"]{
+        height: 30px;
+        width: 120px;
+        background: transparent;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        color: black;
+        background-color: rgb(241, 241, 241);
+        transition: 0.5s;
+    }
+    
+    .form-container input[type="submit"]:hover{
+        background: transparent ;
+        border: white 1px solid;
+        color: white;
+        background-color: rgb(47, 161, 31);
+        transition: 0.5s;
+    }
+  }

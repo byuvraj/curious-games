@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Curious Games!</title>
+        <link rel="icon" type="img/png" href="{{url_for('static', filename='logo1.png')}}" >
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/form2.css') }}">        
+    </head>
+
+    <body >
+        <div class="row" sty    le="margin-top: 15%; margin-bottom: 15%;">
+            <div class="col-sm-8"></div>
+            <div class="col-sm-4" >
+                <form class="form-container" action="">
+                    <h2><img  src="{{url_for('static', filename='logo1.png')}}" alt="Logo">Login</h2>
+                    <div class="input-container">
+                        <input type="text" name="" required="">
+                        <label>Name</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="password" name="" required="">
+                        <label>Password</label>
+                    </div>
+                    <div >
+                        <input type="submit"  value="Submit">     
+                    </div>
+                </form>
+            </div>       
+        </div>
+    </body>
+</html>

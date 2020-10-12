@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--Author: Yuvraj Bhalekar-->
+<html lang="en">
+    <head>
+        {% block head %}
+        {% endblock %}
+        <title>Curious Games!</title>
+        <!--Fonts linking-->
+        <link href='https://fonts.googleapis.com/css?family=Lobster Two' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Dancing Script' rel='stylesheet'>
+        <!--Logo linked-->
+        <link rel="icon" type="img/png" href="{{url_for('static', filename='logo1.png')}}" >
+        <!--Linking css stylesheets-->>
+        <link rel="stylesheet"  href="{{ url_for('static', filename='css/bootstrap.css')}}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-grid.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/buttonAnimation2.css') }}">
+      </head>
+
+    <body style="background-color: #000; color: white;">
+        <ul class="nav nav-tabs" >
+            <li class="nav-item">
+              <a class="nav-link " href="/" style="font-size: 24px;">Curious Games</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/downloads">Downloads</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact">Contact Us</a>
+            </li> 
+          </ul>
+        <h1>{% block heading %}{% endblock %}</h1>
+        {% block body %}
+        
+        {% endblock %}
+    </body>
+</html>
