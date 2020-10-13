@@ -91,7 +91,7 @@ body{
 
 @media(orientation: portrait ) {
     body {
-        background-image:url('http://127.0.0.1:5000//static/website.png');
+        background-image:url('website.png');
         height: auto; 
         background-position: center; 
         background-repeat: no-repeat; 
