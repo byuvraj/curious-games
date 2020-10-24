@@ -40,12 +40,15 @@
         </ul>
     </div>
     <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function(){
+            alert('for android devices hold device horizontally');
+        });
         function toggle(){
             var sec = document.getElementById('sec');
             var vav = document.getElementById('navigation');
             sec.classList.toggle('active');
             nav.classList.toggle('active');
-        }
+        };
     </script>
 </body>
 </html>
